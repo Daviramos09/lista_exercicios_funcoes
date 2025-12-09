@@ -8,11 +8,21 @@
     */
 
     //ENTRADA
-
-
+    const raioCirculo = Number(prompt(`Informe o valore da área do seu círculo`));
     //PROCESSAMENTO
-
-
+    let areaC = 0;
+    let perimetroC = 0;
+    let pi = 3.1415;
+    function areacirculo(raio) {
+        areaC = raio ** 2 * pi;
+        return areaC
+    }
+    function perimetrocirculo(raio) {
+        perimetroC = pi * 2 * raio;
+        return perimetroC;
+    }
+    const perimetro = perimetrocirculo(raioCirculo);
+    const area = areacirculo(raioCirculo);
     //SAÍDA
-
+    alert(`A área do seu círculo é ${area.toFixed(2)} e o perímetro do seu círculo é ${perimetro.toFixed(2)}`);
 </script>

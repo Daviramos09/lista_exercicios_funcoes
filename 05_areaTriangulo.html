@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
-
+    const base = Number(prompt(`Informe o valor da base do triângulo em cm.`));
+    const altura = Number(prompt(`Informe o valor da altura do triângulo em cm`));
     //PROCESSAMENTO
-
-
+    function calcularAreaTriangulo(base, altura) {
+        return (base * altura) / 2;
+    }
+    const area = calcularAreaTriangulo(base, altura);
     //SAÍDA
-
+    document.write(`A área do seu triângulo é ${area} cm²`);
 </script>

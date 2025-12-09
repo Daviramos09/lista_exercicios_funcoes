@@ -5,11 +5,18 @@
     */
 
     //ENTRADA
-
+    const numeroUsuario = Number(prompt(`Informe um número`))
 
     //PROCESSAMENTO
-
-
+    function parOuImpar(numero) {
+        if (numero % 2 == 0) {
+            alert(`O numero ${numero} é par`)
+        }
+        else {
+            alert(`O numero ${numero} é ìmpar`)
+        }
+    }
+    parOuImpar(numeroUsuario);
     //SAÍDA
 
 </script>

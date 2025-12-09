@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-
+    const temperatura = Number(prompt(`Informe a temperatura que deseja transformar de celcius para Fahrenheit.`))
+    let tempetaturaF = 0;
     //PROCESSAMENTO
-
-
+    function transformaFahrenhait(temperaturaC) {
+        tempetaturaF = (9 * temperaturaC + 160) / 5;
+        return tempetaturaF
+    }
+    let temperaturaFinal = transformaFahrenhait(temperatura);
     //SAÍDA
-
+    alert(`A temperatura ${temperatura}°C fica em Fahrenhait ${temperaturaFinal}°F`)
 </script>

@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
+    const peso = Number(prompt(`Informe o seu peso em kg .`));
+    const altura = Number(prompt(`Informe sua altura em metros`));
 
     //PROCESSAMENTO
 
-
+    function calculodoIMC(peso, altura) {
+         return (peso / (altura ** 2))
+        
+    }
+   const imc = calculodoIMC(peso, altura);
     //SAÍDA
-
+    document.write(`o imc é de ${imc}`);
 </script>
